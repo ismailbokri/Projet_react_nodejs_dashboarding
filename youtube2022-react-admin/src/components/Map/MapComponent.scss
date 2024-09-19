@@ -1,0 +1,52 @@
+.map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 70vh; // Ajuster la hauteur selon les besoins
+  width: 80vw;  // Ajuster la largeur selon les besoins
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  // Titre de la carte
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  // Barre de sélection de la région
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+  }
+
+  select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  // Conteneur de la carte Leaflet
+  .leaflet-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1); // Ajouter une ombre intérieure pour l'effet 3D
+  }
+
+  // Message d'erreur
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+}
